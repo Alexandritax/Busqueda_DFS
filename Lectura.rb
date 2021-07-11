@@ -44,10 +44,10 @@ class Lectura
                     name +=  ((65 + n) / 26).chr #genera una cadena con un valor similar a excel => AA, AB, AC, etc| si y solo si se excede de los 25 caracteres disponibles
                 end
             end
-            
+            #El codigo para generar el name del vertice es parte del codigo de Spipe   
             vertices.push(Vertice.new(n + 1, name)) #inserta dentro del array vertices un nuevo vertice
         end
-        
+
         matriz.each_with_index {|val,index1,index2| # las variables val,index1,index2 son parte indices de la matriz y recorrera la matriz dato por dato
             if val == 1
                 aristas.push(Arista.new(vertices[index1], vertices[index2])) # si el valor es 1 se tomaran como vertices inicial y final los que tengan la posicion index1,index2 dentro del array vertices

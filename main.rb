@@ -10,7 +10,7 @@ class Matrix #esta clase representa a todas las matrizes
         arr = @rows
         width = arr.flatten.max.to_s.size + 1 #espacios entre los valores
         puts arr.map { |a| a.map { |i| i.to_s.rjust(width) }.join } #imprime la matriz
-    end
+    end #es parte del codigo de Spipe para imprimir matrices
 end
 
 def print_aristas(aristas) #imprime los vertices que componen las aristas de un grafo
